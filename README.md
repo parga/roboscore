@@ -1,21 +1,5 @@
 #Roboscore
 
----
-Like always ! -> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-This *documentation* tries to cover the main components and functions it does not cover everything but serves as an example, I used *JSDoc*.
-
-The same way the *testing* is not planing to do a full coverage but a demonstration on the setup I like to use, focusing on the use of *a11y* labels to select elements aka role, this is important since allows you to test and at the same time ensure that the components have some basic *a11y*.
-
-Lately being dedication a good amount of time creating scripts to improve *developer experience* and *CI/CD* for UI applications, I tried to show that here in a basic way via the `start` script which should build and open all the docs and app.
-
-Another element that I think is crucial in apps is *localization*, as you will see ( or already saw ) I used react-intl to localize the app, is again some basic localization, ideally you would like to have a harvester that would get the strings from all the components to create the english dictionary and then send that english dictionary for translation to get the other languages, here since I speak spanish I did the translation myself.
-
-*Styles* are not my strong at this moment in time, is being quite some time since I use a design system to do my UI work so I'm a little bit rusted when it comes to styling apps, I decided to use react-spectrum, an Adobe open source design system to help with the layout.
-
-Thanks !
-
----
 ## Available Scripts
 
 In the project directory, you can run:
