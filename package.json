@@ -1,0 +1,59 @@
+{
+  "name": "unquork",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@adobe/react-spectrum": "^3.7.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "babel-plugin-transform-assets": "^1.0.2",
+    "express": "^4.17.1",
+    "ignore-styles": "^5.0.1",
+    "jsdoc": "^3.6.6",
+    "nodemon": "^2.0.7",
+    "open-cli": "^6.0.1",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-intl": "^5.10.16",
+    "react-redux": "^7.2.2",
+    "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
+    "start-server-and-test": "^1.11.7",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "prettier": "prettier -w src server",
+    "start": "yarn docs && yarn build && yarn ssr",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "docs": "jsdoc -r ./src README.md && open-cli ./out/index.html -- 'google chrome'",
+    "ssr": "start-server-and-test server http://localhost:3006 \"open-cli  http://localhost:3006 --wait -- 'google chrome' \" ",
+    "server": "node server/bootstrap.js",
+    "server:dev": "nodemon server/bootstrap.js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

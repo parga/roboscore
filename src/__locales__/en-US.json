@@ -1,0 +1,7 @@
+{
+  "app.age": "He is {age} years old",
+  "app.incrementScore.button": "Increment Score",
+  "app.languageSelector": "Choose the language",
+  "app.languageSelector.spanish": "Spanish",
+  "app.languageSelector.english": "English"
+}
